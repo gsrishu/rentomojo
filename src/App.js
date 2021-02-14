@@ -18,7 +18,7 @@ class App extends Component{
 
           <Router>                   
             <Switch>
-                        <Route exact path='/' component={Home} />
+                        <Route exact path='/*' component={Home} />
                         <Route exact path='/user/:userId/:userName' component={(props) => <User {...props} />}  />
                         <Route exact path='/post/:postId/:userId' component={(props) => <Post {...props}/>} />
 
